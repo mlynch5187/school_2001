@@ -26,4 +26,12 @@ class School
       student_name[0].upcase + student_name[1..-1]
     end
   end
+
+  def convert_end_time_to_clock_time
+    new_time = end_time.to_i
+    converted_time = new_time - 12
+    converted_time.to_s + ":00"
+
+
+  end
 end
