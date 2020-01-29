@@ -28,10 +28,10 @@ class School
   end
 
   def convert_end_time_to_clock_time
-    new_time = end_time.to_i
-    converted_time = new_time - 12
-    converted_time.to_s + ":00"
-
-
+    if end_time.to_i > 12
+      new_time = end_time.to_i
+      converted_time = new_time - 12
+        converted_time.to_s + ":00"
+    end 
   end
 end
