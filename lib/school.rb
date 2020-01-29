@@ -20,4 +20,10 @@ class School
       true
     end
   end
+
+  def standard_student_names
+    @student_names.map do |student_name|
+      student_name[0].upcase + student_name[1..-1]
+    end
+  end
 end
