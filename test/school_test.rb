@@ -30,9 +30,7 @@ class SchoolTest < Minitest::Test
 
   #Iteration 2 Tests:
   def test_it_can_add_student_names
-    skip
     school = School.new('9:00', 7)
-
     school.add_student_name('Aurora')
     school.add_student_name('tim')
     school.add_student_name('megan')
@@ -41,7 +39,6 @@ class SchoolTest < Minitest::Test
   end
 
   def test_it_can_calculate_end_time
-    skip
     school1 = School.new('9:00', 7)
     school2 = School.new('9:00', 3)
 
