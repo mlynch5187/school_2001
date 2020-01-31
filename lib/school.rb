@@ -18,6 +18,8 @@ class School
   def is_full_time?
     if @hours_in_school_day > 4
       true
+    else
+      false
     end
   end
 
@@ -32,6 +34,6 @@ class School
       new_time = end_time.to_i
       converted_time = new_time - 12
         converted_time.to_s + ":00"
-    end 
+    end
   end
 end
